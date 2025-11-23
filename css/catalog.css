@@ -2,12 +2,14 @@
    CATALOG SECTION STYLES
    ========================== */
 
-.catalog-section {
+.catalog-section,
+.categories-promo-section {
     padding: 80px 0;
     background: linear-gradient(135deg, var(--black2) 0%, var(--black) 100%);
 }
 
-.catalog-grid {
+.catalog-grid,
+.categories-promo-grid {
     max-width: 1300px;
     margin: 0 auto;
     padding: 0 20px;
@@ -16,7 +18,8 @@
     gap: 40px;
 }
 
-.catalog-card {
+.catalog-card,
+.category-promo-card {
     background: rgba(34, 34, 36, 0.6);
     border: 2px solid rgba(200, 178, 115, 0.2);
     border-radius: 20px;
@@ -31,7 +34,8 @@
     overflow: hidden;
 }
 
-.catalog-card::before {
+.catalog-card::before,
+.category-promo-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -43,18 +47,49 @@
     transition: transform 0.4s ease;
 }
 
-.catalog-card:hover::before {
+.catalog-card:hover::before,
+.category-promo-card:hover::before {
     transform: scaleX(1);
 }
 
-.catalog-card:hover {
+.catalog-card:hover,
+.category-promo-card:hover {
     border-color: var(--gold-metal);
     background: rgba(34, 34, 36, 0.9);
     transform: translateY(-10px);
     box-shadow: 0 20px 40px rgba(200, 178, 115, 0.2);
 }
 
-.catalog-icon {
+/* Category-specific hover colors */
+.equipment-promo:hover {
+    border-color: var(--equipment-gold);
+    box-shadow: 0 20px 40px rgba(200, 178, 115, 0.3);
+}
+
+.equipment-promo::before {
+    background: var(--equipment-gold);
+}
+
+.cosmetic-promo:hover {
+    border-color: var(--cosmetic-purple);
+    box-shadow: 0 20px 40px rgba(139, 95, 191, 0.3);
+}
+
+.cosmetic-promo::before {
+    background: var(--cosmetic-purple);
+}
+
+.pharma-promo:hover {
+    border-color: var(--pharma-green);
+    box-shadow: 0 20px 40px rgba(76, 175, 80, 0.3);
+}
+
+.pharma-promo::before {
+    background: var(--pharma-green);
+}
+
+.catalog-icon,
+.category-promo-icon {
     font-size: 5rem;
     margin-bottom: 25px;
     display: inline-block;
@@ -62,12 +97,26 @@
     transition: all 0.3s ease;
 }
 
-.catalog-card:hover .catalog-icon {
+.catalog-card:hover .catalog-icon,
+.category-promo-card:hover .category-promo-icon {
     transform: scale(1.1) rotate(5deg);
     filter: drop-shadow(0 0 25px rgba(200, 178, 115, 0.6));
 }
 
-.catalog-card h3 {
+.equipment-promo:hover .category-promo-icon {
+    filter: drop-shadow(0 0 25px rgba(200, 178, 115, 0.6));
+}
+
+.cosmetic-promo:hover .category-promo-icon {
+    filter: drop-shadow(0 0 25px rgba(139, 95, 191, 0.6));
+}
+
+.pharma-promo:hover .category-promo-icon {
+    filter: drop-shadow(0 0 25px rgba(76, 175, 80, 0.6));
+}
+
+.catalog-card h3,
+.category-promo-card h3 {
     color: var(--gold-metal);
     font-size: 1.8rem;
     margin-bottom: 20px;
@@ -75,11 +124,37 @@
     transition: color 0.3s ease;
 }
 
-.catalog-card:hover h3 {
+.catalog-card:hover h3,
+.category-promo-card:hover h3 {
     color: #E8CE86;
 }
 
-.catalog-card p {
+.equipment-promo h3 {
+    color: var(--equipment-gold);
+}
+
+.cosmetic-promo h3 {
+    color: var(--cosmetic-purple);
+}
+
+.pharma-promo h3 {
+    color: var(--pharma-green);
+}
+
+.equipment-promo:hover h3 {
+    color: #E8CE86;
+}
+
+.cosmetic-promo:hover h3 {
+    color: #b28fdb;
+}
+
+.pharma-promo:hover h3 {
+    color: #a5d6a7;
+}
+
+.catalog-card p,
+.category-promo-card p {
     color: var(--silver-metal);
     font-size: 1.05rem;
     line-height: 1.7;
@@ -87,11 +162,13 @@
     transition: color 0.3s ease;
 }
 
-.catalog-card:hover p {
+.catalog-card:hover p,
+.category-promo-card:hover p {
     color: #ECECEC;
 }
 
-.catalog-link {
+.catalog-link,
+.category-promo-link {
     color: var(--gold-metal);
     font-weight: 700;
     font-size: 1rem;
@@ -103,30 +180,60 @@
     letter-spacing: 0.5px;
 }
 
-.catalog-card:hover .catalog-link {
+.catalog-card:hover .catalog-link,
+.category-promo-card:hover .category-promo-link {
     color: #E8CE86;
     transform: translateX(5px);
 }
 
+.equipment-promo .category-promo-link {
+    color: var(--equipment-gold);
+}
+
+.cosmetic-promo .category-promo-link {
+    color: var(--cosmetic-purple);
+}
+
+.pharma-promo .category-promo-link {
+    color: var(--pharma-green);
+}
+
+.equipment-promo:hover .category-promo-link {
+    color: #E8CE86;
+}
+
+.cosmetic-promo:hover .category-promo-link {
+    color: #b28fdb;
+}
+
+.pharma-promo:hover .category-promo-link {
+    color: #a5d6a7;
+}
+
 @media (max-width: 768px) {
-    .catalog-grid {
+    .catalog-grid,
+    .categories-promo-grid {
         grid-template-columns: 1fr;
         padding: 0 15px;
     }
     
-    .catalog-card {
+    .catalog-card,
+    .category-promo-card {
         padding: 35px 25px;
     }
     
-    .catalog-icon {
+    .catalog-icon,
+    .category-promo-icon {
         font-size: 4rem;
     }
     
-    .catalog-card h3 {
+    .catalog-card h3,
+    .category-promo-card h3 {
         font-size: 1.5rem;
     }
     
-    .catalog-card p {
+    .catalog-card p,
+    .category-promo-card p {
         font-size: 0.95rem;
     }
 }
