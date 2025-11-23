@@ -28,8 +28,7 @@ class NosorogCart {
       checkoutBtn.addEventListener('click', e => {
         e.preventDefault();
         if (this.cartItems.length) {
-          alert('Заказ оформлен! Наш менеджер свяжется с вами.');
-          this.clearCart();
+          window.location.href = 'order.html';
         }
       });
     }
