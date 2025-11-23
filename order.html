@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Оформление заказа NOSOROG. Введите контактные данные для подтверждения.">
+    <title>Оформление заказа – NOSOROG</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦏</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+<a href="#main-content" class="skip-link">Перейти к оформлению</a>
+<header role="banner">
+<div class="nav">
+    <a href="index.html" class="logo"><span>🦏 NOSOROG</span> FIGHT CLUB</a>
+    <div class="hamburger" aria-label="Меню" role="button" aria-expanded="false">
+        <div></div><div></div><div></div>
+    </div>
+    <nav class="menu" role="navigation" aria-label="Основное меню">
+        <a href="index.html">Главная</a>
+        <a href="shop.html">Магазин</a>
+        <a href="cart.html">Корзина</a>
+        <a href="index.html#contacts">Контакты</a>
+    </nav>
+    <a href="cart.html" class="cart-btn" aria-label="Корзина">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6h2l.4 2M7 13h9l1.5-6h-13L7 13zM7 17a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm8 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"
+                  stroke="#C8B273" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+</div>
+</header>
+<main id="main-content">
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">📝 Оформление заказа</div>
+            <h1>Заполните данные для оформления заказа</h1>
+            <p>Пожалуйста, укажите контактную информацию и адрес для доставки</p>
+        </div>
+    </section>
+    <section class="order-form-section" style="max-width: 600px; margin: 0 auto; background:rgba(30,30,32,0.7); border-radius:14px; padding:40px 5vw 36px; margin-bottom: 50px;">
+        <form id="orderForm" autocomplete="off">
+            <div class="form-group" style="margin-bottom:18px;">
+                <label for="name" style="display:block; margin-bottom:8px; color:var(--gold-metal); font-weight:700;">Ваше имя *</label>
+                <input type="text" id="name" name="name" required style="width:100%;padding:13px 18px;border-radius:8px;border:2px solid var(--gold-metal);background:var(--black2);color:#ECECEC;font-size:1rem;">
+            </div>
+            <div class="form-group" style="margin-bottom:18px;">
+                <label for="phone" style="display:block; margin-bottom:8px; color:var(--gold-metal); font-weight:700;">Телефон *</label>
+                <input type="tel" id="phone" name="phone" pattern="[+ 0-9()-]{7,20}" required style="width:100%;padding:13px 18px;border-radius:8px;border:2px solid var(--gold-metal);background:var(--black2);color:#ECECEC;font-size:1rem;">
+            </div>
+            <div class="form-group" style="margin-bottom:18px;">
+                <label for="address" style="display:block; margin-bottom:8px; color:var(--gold-metal); font-weight:700;">Адрес (если доставка)</label>
+                <input type="text" id="address" name="address" placeholder="Улица, дом, квартира..." style="width:100%;padding:13px 18px;border-radius:8px;border:2px solid var(--gold-metal);background:var(--black2);color:#ECECEC;font-size:1rem;">
+            </div>
+            <div class="form-group" style="margin-bottom:18px;">
+                <label for="comment" style="display:block; margin-bottom:8px; color:var(--gold-metal); font-weight:700;">Комментарий к заказу</label>
+                <textarea id="comment" name="comment" rows="3" style="width:100%;padding:12px 16px;border-radius:8px;border:2px solid var(--silver-metal);background:var(--black2);color:#ECECEC;font-size:0.98rem;"></textarea>
+            </div>
+            <button type="submit" class="checkout-btn" style="margin-top: 7px;">Подтвердить заказ</button>
+        </form>
+        <script>
+        document.getElementById('orderForm').onsubmit = function(e){
+            e.preventDefault();
+            window.location.href = 'order-confirm.html';
+        }
+        </script>
+    </section>
+</main>
+<footer role="contentinfo">
+    <div class="footer-content">
+        <div class="footer-column">
+            <h4>О клубе</h4>
+            <ul>
+                <li><a href="index.html#about">О NOSOROG</a></li>
+                <li><a href="index.html#trainer">Наш тренер</a></li>
+                <li><a href="index.html#contacts">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Магазин</h4>
+            <ul>
+                <li><a href="equipment.html">Экипировка</a></li>
+                <li><a href="cosmetic.html">Косметика</a></li>
+                <li><a href="pharma.html">Аптека</a></li>
+                <li><a href="cart.html">Корзина</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Контакты</h4>
+            <ul>
+                <li>📍 г. Пенза, ул. Дзержинского, 30</li>
+                <li>📞 <a href="tel:+79374200307">+7 (937) 420-03-07</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Бойцовский клуб NOSOROG. Все права защищены.</p>
+    </div>
+</footer>
+</body>
+</html>
