@@ -1,0 +1,52 @@
+<!-- Категории промо-блок для shop.html: -->
+<section class="categories-promo-section">
+    <div class="section-header">
+        <h2>Каталог по категориям</h2>
+        <p>Выберите категорию для подробного просмотра</p>
+    </div>
+    <div class="categories-promo-grid">
+        <a href="equipment.html" class="category-promo-card equipment-promo">
+            <div class="category-promo-icon">🥊</div>
+            <h3>Экипировка</h3>
+            <p>Перчатки, шлемы, защита</p>
+            <span class="category-promo-link">Смотреть &rarr;</span>
+        </a>
+        <a href="cosmetic.html" class="category-promo-card cosmetic-promo">
+            <div class="category-promo-icon">🧼</div>
+            <h3>Косметика</h3>
+            <p>Кремы, бальзамы, масла</p>
+            <span class="category-promo-link">Смотреть &rarr;</span>
+        </a>
+        <a href="pharma.html" class="category-promo-card pharma-promo">
+            <div class="category-promo-icon">💊</div>
+            <h3>Аптека</h3>
+            <p>Протеины, аминокислоты</p>
+            <span class="category-promo-link">Смотреть &rarr;</span>
+        </a>
+    </div>
+</section>
+
+<style>
+.categories-promo-section { background: var(--black2); padding: 60px 0 50px 0; }
+.categories-promo-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 36px; margin: 0 auto; padding: 0 22px; max-width: 1200px;
+}
+.category-promo-card {
+    background: rgba(34,34,36,0.7); border-radius: 19px; text-align: center; color: var(--silver-metal);
+    border: 2px solid rgba(200,178,115,0.18); transition: .32s; padding: 42px 24px 32px;
+    text-decoration: none; display: flex; flex-direction: column; align-items: center; position: relative; cursor: pointer;
+    box-shadow: 0 3px 17px #21211808;
+}
+.category-promo-card:hover {border-color: var(--gold-metal); background: rgba(39,29,15,.88); color: #fff; box-shadow: 0 6px 32px #C8B27325; transform: translateY(-7px) scale(1.02);}
+.category-promo-icon {font-size: 4rem; margin-bottom: 20px; filter: drop-shadow(0 0 12px var(--gold-metal));}
+.category-promo-card.equipment-promo .category-promo-icon {filter: drop-shadow(0 0 13px var(--equipment-gold));}
+.category-promo-card.cosmetic-promo .category-promo-icon {filter: drop-shadow(0 0 13px var(--cosmetic-purple));}
+.category-promo-card.pharma-promo .category-promo-icon {filter: drop-shadow(0 0 13px var(--pharma-green));}
+.category-promo-card h3 {color: var(--gold-metal); font-size: 1.42rem; margin-bottom: 13px;}
+.category-promo-card:hover h3 {color: #fff8e1;}
+.category-promo-card p {font-size: 1rem; color: var(--silver-bright); margin-bottom: 18px;}
+.category-promo-card:hover p {color: #fff8e7;}
+.category-promo-link {text-transform: uppercase; font-weight: 700; color: var(--gold-metal); font-size: .99rem; letter-spacing: .7px; transition: color .2s, transform .13s;}
+.category-promo-card:hover .category-promo-link {color: #fffbe7; transform: translateX(5px);}
+@media (max-width:650px) {.categories-promo-grid { grid-template-columns: 1fr; padding: 0 6px; }}
+</style>
