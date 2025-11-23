@@ -1,17 +1,8 @@
-/* ...весь существующий CSS... */
-.logo-placeholder {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    vertical-align: middle;
-    border-radius: 10px; /* как у cart-btn */
-    background: var(--silver-metal, #C0C7C7);
-    margin-right: 12px;
-    box-shadow: 0 2px 8px #a0a7b766;
-    border: 2px solid var(--gold-metal);
-    transition: background 0.3s, box-shadow 0.3s;
+/* Banner placeholder */
+.hero {
+    background: linear-gradient(135deg, rgba(21,21,22,0.92) 0%, rgba(34,34,36,0.92) 100%), url('https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=1200&q=60');
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
-.logo:hover .logo-placeholder {
-    background: #ECECEC;
-    box-shadow: 0 3px 18px #C8B27344;
-}
+/* ...остальные стили hero... */
