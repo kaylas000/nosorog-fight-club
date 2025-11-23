@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Магазин NOSOROG - экипировка, косметика и спортпит для единоборств. Профессиональные товары для бойцов в Пензе.">
+    <meta name="keywords" content="магазин единоборств, боксерская экипировка, спортивная косметика, протеин купить">
+    <title>Магазин NOSOROG - Экипировка, Косметика, Спортпит | Пенза</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦏</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Перейти к основному содержанию</a>
+
+    <header role="banner">
+        <div class="nav">
+            <a href="index.html" class="logo">
+                <span>🦏 NOSOROG</span> FIGHT CLUB
+            </a>
+            <div class="hamburger" aria-label="Меню" role="button" aria-expanded="false">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="menu" role="navigation" aria-label="Основное меню">
+                <a href="index.html">Главная</a>
+                <a href="index.html#about">О клубе</a>
+                <div class="menu-item-has-children">
+                    <a href="shop.html" aria-current="page">Магазин</a>
+                    <div class="sub-menu">
+                        <a href="equipment.html">🥊 Экипировка</a>
+                        <a href="cosmetic.html">🧼 Косметика</a>
+                        <a href="pharma.html">💊 Аптека</a>
+                    </div>
+                </div>
+                <a href="index.html#trainer">Тренер</a>
+                <a href="index.html#contacts">Контакты</a>
+            </nav>
+            <a href="cart.html" class="cart-btn" aria-label="Корзина">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6h2l.4 2M7 13h9l1.5-6h-13L7 13zM7 17a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm8 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" 
+                          stroke="#C8B273" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">🛍️ Магазин NOSOROG</div>
+                <h1>Профессиональная экипировка для чемпионов</h1>
+                <p>Всё для бокса, ММА и единоборств в одном месте</p>
+            </div>
+        </section>
+
+        <!-- MOBILE FILTERS -->
+        <div class="mobile-filters">
+            <div class="mobile-filter-header" id="mobileFilterToggle">
+                <div class="mobile-filter-title">
+                    <span>🔍</span> Фильтр и поиск
+                </div>
+                <div class="mobile-filter-toggle">▼</div>
+            </div>
+            <div class="mobile-filters-container" id="mobileFiltersContainer">
+                <div class="mobile-filters-content">
+                    <div class="mobile-search-box">
+                        <input type="text" placeholder="Поиск товаров..." id="mobileSearchInput">
+                        <button class="mobile-search-btn">🔍</button>
+                    </div>
+                    
+                    <div class="mobile-filter-section">
+                        <div class="mobile-filter-section-title">
+                            <span>📦</span> Категории
+                        </div>
+                        <div class="mobile-filter-buttons">
+                            <button class="mobile-filter-btn active" data-category="all">Все</button>
+                            <button class="mobile-filter-btn" data-category="equipment">Экипировка</button>
+                            <button class="mobile-filter-btn" data-category="cosmetic">Косметика</button>
+                            <button class="mobile-filter-btn" data-category="pharma">Аптека</button>
+                        </div>
+                    </div>
+                    
+                    <div class="mobile-filter-section">
+                        <div class="mobile-filter-section-title">
+                            <span>🏷️</span> Статус
+                        </div>
+                        <div class="mobile-filter-buttons">
+                            <button class="mobile-filter-btn active" data-filter="all">Все</button>
+                            <button class="mobile-filter-btn" data-filter="new">Новинки</button>
+                            <button class="mobile-filter-btn" data-filter="sale">Акции</button>
+                            <button class="mobile-filter-btn" data-filter="bestseller">Хиты</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CATEGORIES -->
+        <section class="categories-section">
+            <div class="categories-container">
+                <div class="categories-nav">
+                    <button class="category-btn active" data-category="all">
+                        <span>📦</span> Все товары
+                    </button>
+                    <button class="category-btn" data-category="equipment">
+                        <span>🥊</span> Экипировка
+                    </button>
+                    <button class="category-btn" data-category="cosmetic">
+                        <span>🧼</span> Косметика
+                    </button>
+                    <button class="category-btn" data-category="pharma">
+                        <span>💊</span> Аптека
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- FILTERS -->
+        <section class="filters-section">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="new">Новинки</button>
+                    <button class="filter-btn" data-filter="sale">Акции</button>
+                    <button class="filter-btn" data-filter="bestseller">Хиты</button>
+                </div>
+                
+                <div class="sorting">
+                    <select aria-label="Сортировка">
+                        <option value="default">По умолчанию</option>
+                        <option value="price-asc">По цене (↑)</option>
+                        <option value="price-desc">По цене (↓)</option>
+                        <option value="name">По названию</option>
+                    </select>
+                </div>
+                
+                <div class="search-box">
+                    <input type="text" placeholder="Поиск..." id="desktopSearchInput">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section class="products-section">
+            <div class="products-header">
+                <h2>Каталог товаров</h2>
+                <p>Профессиональная экипировка и спортивное питание</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Equipment Products -->
+                <div class="product-card equipment" data-category="equipment" data-status="bestseller">
+                    <div class="product-badge bestseller">ХИТ</div>
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect fill='%23222224' width='300' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23C8B273' font-size='48'%3E🥊%3C/text%3E%3C/svg%3E" 
+                             alt="Боксёрские перчатки Pro" loading="lazy">
+                    </div>
+                    <div class="product-category">
+                        <span>🥊</span> Экипировка
+                    </div>
+                    <h3 class="product-title">Боксёрские перчатки Pro 12oz</h3>
+                    <p class="product-description">Профессиональные перчатки для тренировок и спаррингов с усиленной защитой</p>
+                    <div class="product-price">
+                        <div>
+                            <span class="price">8,500₽</span>
+                            <span class="old-price">10,000₽</span>
+                        </div>
+                        <button class="add-to-cart" data-product="Боксёрские перчатки Pro 12oz" data-price="8500" data-category="equipment">
+                            <span>🛒</span> В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card equipment" data-category="equipment" data-status="new">
+                    <div class="product-badge new">NEW</div>
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect fill='%23222224' width='300' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23C8B273' font-size='48'%3E🛡️%3C/text%3E%3C/svg%3E" 
+                             alt="Защитный шлем" loading="lazy">
+                    </div>
+                    <div class="product-category">
+                        <span>🥊</span> Экипировка
+                    </div>
+                    <h3 class="product-title">Защитный шлем Guardian</h3>
+                    <p class="product-description">Профессиональный шлем для спаррингов с усиленной защитой</p>
+                    <div class="product-price">
+                        <div>
+                            <span class="price">6,200₽</span>
+                        </div>
+                        <button class="add-to-cart" data-product="Защитный шлем Guardian" data-price="6200" data-category="equipment">
+                            <span>🛒</span> В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card equipment" data-category="equipment" data-status="sale">
+                    <div class="product-badge sale">SALE -25%</div>
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect fill='%23222224' width='300' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23C8B273' font-size='48'%3E👟%3C/text%3E%3C/svg%3E" 
+                             alt="Боксёрки" loading="lazy">
+                    </div>
+                    <div class="product-category">
+                        <span>🥊</span> Экипировка
+                    </div>
+                    <h3 class="product-title">Боксёрки Speed Pro</h3>
+                    <p class="product-description">Лёгкие боксёрки для максимальной подвижности</p>
+                    <div class="product-price">
+                        <div>
+                            <span class="price">5,600₽</span>
+                            <span class="old-price">7,500₽</span>
+                        </div>
+                        <button class="add-to-cart" data-product="Боксёрки Speed Pro" data-price="5600" data-category="equipment">
+                            <span>🛒</span> В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cosmetic Products -->
+                <div class="product-card cosmetic" data-category="cosmetic" data-status="bestseller">
+                    <div class="product-badge bestseller">ХИТ</div>
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect fill='%23222224' width='300' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%238B5FBF' font-size='48'%3E🧴%3C/text%3E%3C/svg%3E" 
+                             alt="Крем для восстановления" loading="lazy">
+                    </div>
+                    <div class="product-category">
+                        <span>🧼</span> Косметика
+                    </div>
+                    <h3 class="product-title">Крем для восстановления мышц</h3>
+                    <p class="product-description">Быстрое восстановление после тренировок, охлаждающий эффект</p>
+                    <div class="product-price">
+                        <div>
+                            <span class="price">1,800₽</span>
+                            <span class="old-price">2,200₽</span>
+                        </div>
+                        <button class="add-to-cart" data-product="Крем для восстановления мышц" data-price="1800" data-category="cosmetic">
+                            <span>🛒</span> В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card cosmetic" data-category="cosmetic" data-status="new">
+                    <div class="product-badge new">NEW</div>
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect fill='%23222224' width='300' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%238B5FBF' font-size='48'%3E💪%3C/text%3E%3C/svg%3E" 
+                             alt="Массажное масло" loading="lazy">
+                    </div>
+                    <div class="product-category">
+                        <span>🧼</span> Косметика
+                    </div>
+                    <h3 class="product-title">Массажное масло для спортсменов</h3>
+                    <p class="product-description">Разогревающее масло для массажа перед тренировкой</p>
+                    <div class="product-price">
+                        <div>
+                            <span class="price">1,200₽</span>
+                        </div>
+                        <button class="add-to-cart" data-product="Массажное масло для спортсменов" data-price="1200" data-category="cosmetic">
+                            <span>🛒</span> В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Pharma Products -->
+                <div class="product-card pharma" data-category="pharma" data-status="bestseller">
+                    <div class="product-badge bestseller">ХИТ</div>
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect fill='%23222224' width='300' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%234CAF50' font-size='48'%3E💊%3C/text%3E%3C/svg%3E" 
+                             alt="Протеин Whey Gold" loading="lazy">
+                    </div>
+                    <div class="product-category">
+                        <span>💊</span> Аптека
+                    </div>
+                    <h3 class="product-title">Протеин Whey Gold 2кг</h3>
+                    <p class="product-description">Высококачественный сывороточный протеин для набора мышечной массы</p>
+                    <div class="product-price">
+                        <div>
+                            <span class="price">4,500₽</span>
+                        </div>
+                        <button class="add-to-cart" data-product="Протеин Whey Gold 2кг" data-price="4500" data-category="pharma">
+                            <span>🛒</span> В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card pharma" data-category="pharma" data-status="new">
+                    <div class="product-badge new">NEW</div>
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect fill='%23222224' width='300' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%234CAF50' font-size='48'%3E⚡%3C/text%3E%3C/svg%3E" 
+                             alt="Предтренировочный комплекс" loading="lazy">
+                    </div>
+                    <div class="product-category">
+                        <span>💊</span> Аптека
+                    </div>
+                    <h3 class="product-title">Pre-Workout Energy Explosion</h3>
+                    <p class="product-description">Предтренировочный комплекс для взрывной энергии</p>
+                    <div class="product-price">
+                        <div>
+                            <span class="price">2,800₽</span>
+                        </div>
+                        <button class="add-to-cart" data-product="Pre-Workout Energy Explosion" data-price="2800" data-category="pharma">
+                            <span>🛒</span> В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card pharma" data-category="pharma" data-status="sale">
+                    <div class="product-badge sale">SALE -20%</div>
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect fill='%23222224' width='300' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%234CAF50' font-size='48'%3E🔥%3C/text%3E%3C/svg%3E" 
+                             alt="BCAA аминокислоты" loading="lazy">
+                    </div>
+                    <div class="product-category">
+                        <span>💊</span> Аптека
+                    </div>
+                    <h3 class="product-title">BCAA 8:1:1 (400г)</h3>
+                    <p class="product-description">Аминокислоты для восстановления и роста мышц</p>
+                    <div class="product-price">
+                        <div>
+                            <span class="price">2,000₽</span>
+                            <span class="old-price">2,500₽</span>
+                        </div>
+                        <button class="add-to-cart" data-product="BCAA 8:1:1 (400г)" data-price="2000" data-category="pharma">
+                            <span>🛒</span> В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CATALOG LINKS -->
+        <section class="catalog-section">
+            <div class="section-header">
+                <h2>Каталог по категориям</h2>
+                <p>Выберите категорию для подробного просмотра</p>
+            </div>
+            
+            <div class="catalog-grid">
+                <a href="equipment.html" class="catalog-card">
+                    <div class="catalog-icon">🥊</div>
+                    <h3>Боксёрская экипировка</h3>
+                    <p>Перчатки, шлемы, защита и всё для тренировок</p>
+                    <span class="catalog-link">Смотреть каталог →</span>
+                </a>
+
+                <a href="cosmetic.html" class="catalog-card">
+                    <div class="catalog-icon">🧼</div>
+                    <h3>Спортивная косметика</h3>
+                    <p>Кремы, бальзамы и средства для восстановления</p>
+                    <span class="catalog-link">Смотреть каталог →</span>
+                </a>
+
+                <a href="pharma.html" class="catalog-card">
+                    <div class="catalog-icon">💊</div>
+                    <h3>Спортивная аптека</h3>
+                    <p>Протеины, аминокислоты и спортивное питание</p>
+                    <span class="catalog-link">Смотреть каталог →</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- INFO -->
+        <section class="about-section">
+            <div class="section-header">
+                <h2>Почему выбирают наш магазин</h2>
+                <p>Преимущества покупки в NOSOROG</p>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">✅</div>
+                    <h3>100% Оригинал</h3>
+                    <p>Работаем напрямую с производителями, все товары сертифицированы</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🚚</div>
+                    <h3>Быстрая доставка</h3>
+                    <p>Доставка по Пензе в день заказа, по России 2-5 дней</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">💬</div>
+                    <h3>Консультация</h3>
+                    <p>Помощь в выборе от профессиональных спортсменов</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>О клубе</h4>
+                <ul>
+                    <li><a href="index.html#about">О NOSOROG</a></li>
+                    <li><a href="index.html#trainer">Наш тренер</a></li>
+                    <li><a href="index.html#services">Направления</a></li>
+                    <li><a href="index.html#contacts">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Магазин</h4>
+                <ul>
+                    <li><a href="equipment.html">Экипировка</a></li>
+                    <li><a href="cosmetic.html">Косметика</a></li>
+                    <li><a href="pharma.html">Аптека</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <ul>
+                    <li>📍 г. Пенза, ул. Дзержинского, 30</li>
+                    <li>📞 <a href="tel:+79374200307">+7 (937) 420-03-07</a></li>
+                    <li>Федерация ММА г. Пенза</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Бойцовский клуб NOSOROG. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
