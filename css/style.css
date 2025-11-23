@@ -4,8 +4,14 @@
     width: 40px;
     height: 40px;
     vertical-align: middle;
-    border-radius: 50%;
+    border-radius: 10px; /* как у cart-btn */
     background: var(--silver-metal, #C0C7C7);
     margin-right: 12px;
     box-shadow: 0 2px 8px #a0a7b766;
+    border: 2px solid var(--gold-metal);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+.logo:hover .logo-placeholder {
+    background: #ECECEC;
+    box-shadow: 0 3px 18px #C8B27344;
 }
