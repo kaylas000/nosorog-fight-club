@@ -8,6 +8,7 @@
     <title>Магазин NOSOROG - Экипировка, Косметика, Спортпит | Пенза</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦏</text></svg>">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/catalog.css">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Перейти к основному содержанию</a>
@@ -24,7 +25,7 @@
             </div>
             <nav class="menu" role="navigation" aria-label="Основное меню">
                 <a href="index.html">Главная</a>
-                <a href="index.html#about">О клубе</a>
+                <a href="about.html">О клубе</a>
                 <div class="menu-item-has-children">
                     <a href="shop.html" aria-current="page">Магазин</a>
                     <div class="sub-menu">
@@ -329,33 +330,30 @@
             </div>
         </section>
 
-        <!-- CATALOG LINKS -->
-        <section class="catalog-section">
+        <!-- CATALOG CATEGORIES -->
+        <section class="categories-promo-section">
             <div class="section-header">
                 <h2>Каталог по категориям</h2>
                 <p>Выберите категорию для подробного просмотра</p>
             </div>
-            
-            <div class="catalog-grid">
-                <a href="equipment.html" class="catalog-card">
-                    <div class="catalog-icon">🥊</div>
-                    <h3>Боксёрская экипировка</h3>
-                    <p>Перчатки, шлемы, защита и всё для тренировок</p>
-                    <span class="catalog-link">Смотреть каталог →</span>
+            <div class="categories-promo-grid">
+                <a href="equipment.html" class="category-promo-card equipment-promo">
+                    <div class="category-promo-icon">🥊</div>
+                    <h3>Экипировка</h3>
+                    <p>Перчатки, шлемы, защита</p>
+                    <span class="category-promo-link">Смотреть →</span>
                 </a>
-
-                <a href="cosmetic.html" class="catalog-card">
-                    <div class="catalog-icon">🧼</div>
-                    <h3>Спортивная косметика</h3>
-                    <p>Кремы, бальзамы и средства для восстановления</p>
-                    <span class="catalog-link">Смотреть каталог →</span>
+                <a href="cosmetic.html" class="category-promo-card cosmetic-promo">
+                    <div class="category-promo-icon">🧼</div>
+                    <h3>Косметика</h3>
+                    <p>Кремы, бальзамы, масла</p>
+                    <span class="category-promo-link">Смотреть →</span>
                 </a>
-
-                <a href="pharma.html" class="catalog-card">
-                    <div class="catalog-icon">💊</div>
-                    <h3>Спортивная аптека</h3>
-                    <p>Протеины, аминокислоты и спортивное питание</p>
-                    <span class="catalog-link">Смотреть каталог →</span>
+                <a href="pharma.html" class="category-promo-card pharma-promo">
+                    <div class="category-promo-icon">💊</div>
+                    <h3>Аптека</h3>
+                    <p>Протеины, аминокислоты</p>
+                    <span class="category-promo-link">Смотреть →</span>
                 </a>
             </div>
         </section>
@@ -391,7 +389,7 @@
             <div class="footer-column">
                 <h4>О клубе</h4>
                 <ul>
-                    <li><a href="index.html#about">О NOSOROG</a></li>
+                    <li><a href="about.html">О NOSOROG</a></li>
                     <li><a href="index.html#trainer">Наш тренер</a></li>
                     <li><a href="index.html#services">Направления</a></li>
                     <li><a href="index.html#contacts">Контакты</a></li>
