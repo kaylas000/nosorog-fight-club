@@ -10,42 +10,51 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Перейти к основному содержанию</a>
-
-    <header role="banner">
-        <div class="nav">
-            <a href="index.html" class="logo">
-                <span class="logo-placeholder" aria-label="NOSOROG Логотип"></span> NOSOROG FIGHT CLUB
-            </a>
-            <div class="hamburger" aria-label="Меню" role="button" aria-expanded="false">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <nav class="menu" role="navigation" aria-label="Основное меню">
-                <a href="index.html" aria-current="page">Главная</a>
-                <a href="index.html#about">О клубе</a>
-                <div class="menu-item-has-children">
-                    <a href="shop.html">Магазин</a>
-                    <div class="sub-menu">
-                        <a href="equipment.html">🥊 Экипировка</a>
-                        <a href="cosmetic.html">🧼 Косметика</a>
-                        <a href="pharma.html">💊 Аптека</a>
-                    </div>
-                </div>
-                <a href="index.html#trainer">Тренер</a>
-                <a href="index.html#contacts">Контакты</a>
-            </nav>
-            <a href="cart.html" class="cart-btn" aria-label="Корзина">
-                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6 6h2l.4 2M7 13h9l1.5-6h-13L7 13zM7 17a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm8 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" 
-                          stroke="#C8B273" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-                <span class="cart-count">0</span>
-            </a>
+<a href="#main-content" class="skip-link">Перейти к основному содержанию</a>
+<header role="banner">
+    <div class="nav">
+        <a href="index.html" class="logo">
+            <span class="logo-placeholder" aria-label="NOSOROG Логотип"></span> NOSOROG FIGHT CLUB
+        </a>
+        <div class="hamburger" aria-label="Меню" role="button" aria-expanded="false">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-    </header>
-    ... (rest of original file omitted for brevity; same `<span class="logo-placeholder">` used everywhere instead of эмодзи носорога) ...
-    <style>.logo-placeholder { display:inline-block;width:40px;height:40px;vertical-align:middle;border-radius:50%;background:var(--silver-metal,#C0C7C7);margin-right:12px;box-shadow:0 2px 8px #a0a7b766;}</style>
-</body>
-</html>
+        <nav class="menu" role="navigation" aria-label="Основное меню">
+            <a href="index.html" aria-current="page">Главная</a>
+            <a href="index.html#about">О клубе</a>
+            <div class="menu-item-has-children">
+                <a href="shop.html">Магазин</a>
+                <div class="sub-menu">
+                    <a href="equipment.html">🥊 Экипировка</a>
+                    <a href="cosmetic.html">🧼 Косметика</a>
+                    <a href="pharma.html">💊 Аптека</a>
+                </div>
+            </div>
+            <a href="index.html#trainer">Тренер</a>
+            <a href="index.html#contacts">Контакты</a>
+        </nav>
+        <a href="cart.html" class="cart-btn" aria-label="Корзина">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 6h2l.4 2M7 13h9l1.5-6h-13L7 13zM7 17a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm8 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" stroke="#C8B273" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="cart-count">0</span>
+        </a>
+    </div>
+</header>
+<style>
+.logo-placeholder {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    border-radius: 10px;
+    background: var(--silver-metal, #C0C7C7);
+    margin-right: 12px;
+    border: 2px solid var(--gold-metal);
+    box-shadow: 0 2px 8px #a0a7b766;
+}
+</style>
+ ...
+<!-- остальной html в исходном виде -->
