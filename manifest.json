@@ -1,0 +1,27 @@
+{
+  "name": "Бойцовский клуб NOSOROG",
+  "short_name": "NOSOROG",
+  "description": "ММА, бокс, кикбоксинг, грэпплинг в Пензе",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#151516",
+  "theme_color": "#C8B273",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 192 192%22><rect fill=%22%23151516%22 width=%22192%22 height=%22192%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2296%22 fill=%22%23C8B273%22>🦏</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 512 512%22><rect fill=%22%23151516%22 width=%22512%22 height=%22512%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%22256%22 fill=%22%23C8B273%22>🦏</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["sports", "fitness", "health"],
+  "lang": "ru",
+  "dir": "ltr"
+}
