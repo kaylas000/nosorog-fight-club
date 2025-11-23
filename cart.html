@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Корзина покупок NOSOROG. Оформление заказа спортивной экипировки, косметики и спортпита.">
+    <title>Корзина покупок – NOSOROG | Оформление заказа</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦏</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Перейти к основному содержанию</a>
+
+    <header role="banner">
+        <div class="nav">
+            <a href="index.html" class="logo">
+                <span>🦏 NOSOROG</span> FIGHT CLUB
+            </a>
+            <div class="hamburger" aria-label="Меню" role="button" aria-expanded="false">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="menu" role="navigation" aria-label="Основное меню">
+                <a href="index.html">Главная</a>
+                <a href="index.html#about">О клубе</a>
+                <div class="menu-item-has-children">
+                    <a href="shop.html">Магазин</a>
+                    <div class="sub-menu">
+                        <a href="equipment.html">🥊 Экипировка</a>
+                        <a href="cosmetic.html">🧼 Косметика</a>
+                        <a href="pharma.html">💊 Аптека</a>
+                    </div>
+                </div>
+                <a href="index.html#trainer">Тренер</a>
+                <a href="index.html#contacts">Контакты</a>
+            </nav>
+            <a href="cart.html" class="cart-btn" aria-label="Корзина" aria-current="page">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6h2l.4 2M7 13h9l1.5-6h-13L7 13zM7 17a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm8 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" 
+                          stroke="#C8B273" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">🛒 Корзина покупок</div>
+                <h1>Ваша корзина</h1>
+                <p>Проверьте выбранные товары перед оформлением заказа</p>
+            </div>
+        </section>
+
+        <section class="cart-content">
+            <div class="cart-container">
+                <div class="cart-items" id="cartItemsContainer">
+                    <div class="cart-header">
+                        <h2 class="cart-title">Товары в корзине</h2>
+                        <span class="cart-count-badge" id="cartCountBadge">0 товаров</span>
+                    </div>
+                    <div id="cartItemsList">
+                        <div class="empty-cart">
+                            <div class="empty-cart-icon">🛒</div>
+                            <h3>Ваша корзина пуста</h3>
+                            <p>Добавьте товары из магазина</p>
+                            <a href="shop.html" class="btn-primary">Перейти в магазин</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-summary" id="cartSummary">
+                    <h3>Сумма заказа</h3>
+                    <div class="summary-row">
+                        <span>Товары:</span>
+                        <span id="subtotalAmount">0₽</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Доставка:</span>
+                        <span id="deliveryAmount">0₽</span>
+                    </div>
+                    <div class="delivery-options">
+                        <label class="delivery-option">
+                            <input type="radio" name="delivery" value="0" checked>
+                            <div class="option-content">
+                                <strong>Самовывоз</strong>
+                                <small>г. Пенза, ул. Дзержинского, 30</small>
+                            </div>
+                            <span class="option-price">Бесплатно</span>
+                        </label>
+                        <label class="delivery-option">
+                            <input type="radio" name="delivery" value="300">
+                            <div class="option-content">
+                                <strong>Курьером по Пензе</strong>
+                                <small>Доставка в день заказа</small>
+                            </div>
+                            <span class="option-price">300₽</span>
+                        </label>
+                        <label class="delivery-option">
+                            <input type="radio" name="delivery" value="500">
+                            <div class="option-content">
+                                <strong>По России</strong>
+                                <small>Доставка 2-5 дней</small>
+                            </div>
+                            <span class="option-price">500₽</span>
+                        </label>
+                    </div>
+                    <div class="summary-total">
+                        <span>Итого:</span>
+                        <span id="totalAmount">0₽</span>
+                    </div>
+                    <button class="checkout-btn" id="checkoutBtn" disabled>
+                        Оформить заказ • <span id="checkoutTotal">0₽</span>
+                    </button>
+                    <a href="shop.html" class="continue-shopping">← Продолжить покупки</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="recommendations-section">
+            <div class="section-header">
+                <h2>Рекомендуем добавить</h2>
+                <p>Дополните ваш заказ</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card equipment">
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect fill='%23222224' width='300' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%23C8B273' font-size='48'%3E🧤%3C/text%3E%3C/svg%3E" alt="Бинты" loading="lazy">
+                    </div>
+                    <div class="product-category"><span>🥊</span> Экипировка</div>
+                    <h3 class="product-title">Боксёрские бинты</h3>
+                    <p class="product-description">Эластичные бинты для защиты кисти</p>
+                    <div class="product-price">
+                        <div><span class="price">890₽</span></div>
+                        <button class="add-to-cart" data-product="Боксёрские бинты" data-price="890" data-category="equipment">
+                            <span>🛒</span> В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card cosmetic">
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect fill='%23222224' width='300' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%238B5FBF' font-size='48'%3E❄️%3C/text%3E%3C/svg%3E" alt="Гель" loading="lazy">
+                    </div>
+                    <div class="product-category"><span>🧼</span> Косметика</div>
+                    <h3 class="product-title">Восстанавливающий гель</h3>
+                    <p class="product-description">Охлаждающий гель после тренировок</p>
+                    <div class="product-price">
+                        <div><span class="price">1,500₽</span></div>
+                        <button class="add-to-cart" data-product="Восстанавливающий гель" data-price="1500" data-category="cosmetic">
+                            <span>🛒</span> В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card pharma">
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect fill='%23222224' width='300' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%234CAF50' font-size='48'%3E💊%3C/text%3E%3C/svg%3E" alt="Витамины" loading="lazy">
+                    </div>
+                    <div class="product-category"><span>💊</span> Аптека</div>
+                    <h3 class="product-title">Витамины Magnesium + B6</h3>
+                    <p class="product-description">Магний и витамин B6 для нервной системы</p>
+                    <div class="product-price">
+                        <div><span class="price">690₽</span></div>
+                        <button class="add-to-cart" data-product="Витамины Magnesium + B6" data-price="690" data-category="pharma">
+                            <span>🛒</span> В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>О клубе</h4>
+                <ul>
+                    <li><a href="index.html#about">О NOSOROG</a></li>
+                    <li><a href="index.html#trainer">Наш тренер</a></li>
+                    <li><a href="index.html#contacts">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Магазин</h4>
+                <ul>
+                    <li><a href="equipment.html">Экипировка</a></li>
+                    <li><a href="cosmetic.html">Косметика</a></li>
+                    <li><a href="pharma.html">Аптека</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <ul>
+                    <li>📍 г. Пенза, ул. Дзержинского, 30</li>
+                    <li>📞 <a href="tel:+79374200307">+7 (937) 420-03-07</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Бойцовский клуб NOSOROG. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="js/cart.js"></script>
+</body>
+</html>

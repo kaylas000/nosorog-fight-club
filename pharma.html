@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Спортивная аптека NOSOROG - протеины, BCAA, витамины, предтренировочные комплексы. Спортивное питание для бойцов в Пензе.">
+    <meta name="keywords" content="протеин купить, BCAA, спортивное питание, предтреник, креатин, витамины для спортсменов">
+    <title>Спортивная аптека NOSOROG - Протеин, BCAA, Спортпит | Пенза</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦏</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/catalog.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Перейти к основному содержанию</a>
+
+    <header role="banner">
+        <div class="nav">
+            <a href="index.html" class="logo">
+                <span>🦏 NOSOROG</span> FIGHT CLUB
+            </a>
+            <div class="hamburger" aria-label="Меню" role="button" aria-expanded="false">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <nav class="menu" role="navigation" aria-label="Основное меню">
+                <a href="index.html">Главная</a>
+                <a href="index.html#about">О клубе</a>
+                <div class="menu-item-has-children">
+                    <a href="shop.html">Магазин</a>
+                    <div class="sub-menu">
+                        <a href="equipment.html">🥊 Экипировка</a>
+                        <a href="cosmetic.html">🧼 Косметика</a>
+                        <a href="pharma.html" aria-current="page">💊 Аптека</a>
+                    </div>
+                </div>
+                <a href="index.html#trainer">Тренер</a>
+                <a href="index.html#contacts">Контакты</a>
+            </nav>
+            <a href="cart.html" class="cart-btn" aria-label="Корзина">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6h2l.4 2M7 13h9l1.5-6h-13L7 13zM7 17a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm8 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" 
+                          stroke="#C8B273" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">💊 Спортивная аптека</div>
+                <h1>Спортивное питание NOSOROG</h1>
+                <p>Протеины, добавки и всё для достижения результата</p>
+            </div>
+        </section>
+
+        <div class="mobile-filters">
+            <div class="mobile-filter-header" id="mobileFilterToggle">
+                <div class="mobile-filter-title"><span>🔍</span> Фильтр и поиск</div>
+                <div class="mobile-filter-toggle">▼</div>
+            </div>
+            <div class="mobile-filters-container" id="mobileFiltersContainer">
+                <div class="mobile-filters-content">
+                    <div class="mobile-search-box">
+                        <input type="text" placeholder="Поиск спортпита..." id="mobileSearchInput">
+                        <button class="mobile-search-btn">🔍</button>
+                    </div>
+                    <div class="mobile-filter-section">
+                        <div class="mobile-filter-section-title"><span>🏷️</span> Статус</div>
+                        <div class="mobile-filter-buttons">
+                            <button class="mobile-filter-btn active" data-filter="all">Все</button>
+                            <button class="mobile-filter-btn" data-filter="new">Новинки</button>
+                            <button class="mobile-filter-btn" data-filter="sale">Акции</button>
+                            <button class="mobile-filter-btn" data-filter="bestseller">Хиты</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="categories-section">
+            <div class="categories-container">
+                <div class="categories-nav">
+                    <button class="category-btn active" data-category="all"><span>💊</span> Все товары</button>
+                    <button class="category-btn" data-category="protein"><span>💪</span> Протеины</button>
+                    <button class="category-btn" data-category="amino"><span>🔥</span> Аминокислоты</button>
+                    <button class="category-btn" data-category="preworkout"><span>⚡</span> Предтреники</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="filters-section">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="new">Новинки</button>
+                    <button class="filter-btn" data-filter="sale">Акции</button>
+                    <button class="filter-btn" data-filter="bestseller">Хиты</button>
+                </div>
+                <div class="sorting">
+                    <select aria-label="Сортировка">
+                        <option value="default">По умолчанию</option>
+                        <option value="price-asc">По цене (↑)</option>
+                        <option value="price-desc">По цене (↓)</option>
+                        <option value="name">По названию</option>
+                    </select>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Поиск..." id="desktopSearchInput">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="products-header">
+                <h2>Каталог спортивного питания</h2>
+                <p>Профессиональные добавки и спортпит</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card pharma" data-category="protein" data-status="bestseller">
+                    <div class="product-badge bestseller">ХИТ</div>
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect fill='%23222224' width='300' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%234CAF50' font-size='48'%3E💊%3C/text%3E%3C/svg%3E" alt="Протеин" loading="lazy">
+                    </div>
+                    <div class="product-category"><span>💪</span> Протеины</div>
+                    <h3 class="product-title">Whey Gold Protein 2кг</h3>
+                    <p class="product-description">Высококачественный сывороточный протеин, 24г белка на порцию</p>
+                    <div class="product-price">
+                        <div><span class="price">4,500₽</span></div>
+                        <button class="add-to-cart" data-product="Whey Gold Protein 2кг" data-price="4500" data-category="pharma">
+                            <span>🛒</span> В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card pharma" data-category="preworkout" data-status="new">
+                    <div class="product-badge new">NEW</div>
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect fill='%23222224' width='300' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%234CAF50' font-size='48'%3E⚡%3C/text%3E%3C/svg%3E" alt="Предтреник" loading="lazy">
+                    </div>
+                    <div class="product-category"><span>⚡</span> Предтреники</div>
+                    <h3 class="product-title">Energy Explosion Pre-Workout</h3>
+                    <p class="product-description">Мощный предтренировочный комплекс для взрывной энергии</p>
+                    <div class="product-price">
+                        <div><span class="price">2,800₽</span><span class="old-price">3,500₽</span></div>
+                        <button class="add-to-cart" data-product="Energy Explosion Pre-Workout" data-price="2800" data-category="pharma">
+                            <span>🛒</span> В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card pharma" data-category="amino" data-status="sale">
+                    <div class="product-badge sale">SALE -20%</div>
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect fill='%23222224' width='300' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%234CAF50' font-size='48'%3E🔥%3C/text%3E%3C/svg%3E" alt="BCAA" loading="lazy">
+                    </div>
+                    <div class="product-category"><span>🔥</span> Аминокислоты</div>
+                    <h3 class="product-title">BCAA 8:1:1 (400г)</h3>
+                    <p class="product-description">Аминокислоты для восстановления и роста мышечной массы</p>
+                    <div class="product-price">
+                        <div><span class="price">2,000₽</span><span class="old-price">2,500₽</span></div>
+                        <button class="add-to-cart" data-product="BCAA 8:1:1 (400г)" data-price="2000" data-category="pharma">
+                            <span>🛒</span> В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card pharma" data-category="protein" data-status="bestseller">
+                    <div class="product-badge bestseller">ХИТ</div>
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect fill='%23222224' width='300' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%234CAF50' font-size='48'%3E🥛%3C/text%3E%3C/svg%3E" alt="Казеин" loading="lazy">
+                    </div>
+                    <div class="product-category"><span>💪</span> Протеины</div>
+                    <h3 class="product-title">Casein Protein Night (1.5кг)</h3>
+                    <p class="product-description">Медленный протеин для восстановления во время сна</p>
+                    <div class="product-price">
+                        <div><span class="price">3,900₽</span></div>
+                        <button class="add-to-cart" data-product="Casein Protein Night (1.5кг)" data-price="3900" data-category="pharma">
+                            <span>🛒</span> В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card pharma" data-category="amino" data-status="new">
+                    <div class="product-badge new">NEW</div>
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect fill='%23222224' width='300' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%234CAF50' font-size='48'%3E💪%3C/text%3E%3C/svg%3E" alt="Креатин" loading="lazy">
+                    </div>
+                    <div class="product-category"><span>🔥</span> Аминокислоты</div>
+                    <h3 class="product-title">Creatine Monohydrate (500г)</h3>
+                    <p class="product-description">Креатин для увеличения силы и выносливости</p>
+                    <div class="product-price">
+                        <div><span class="price">1,800₽</span></div>
+                        <button class="add-to-cart" data-product="Creatine Monohydrate (500г)" data-price="1800" data-category="pharma">
+                            <span>🛒</span> В корзину
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card pharma" data-category="preworkout" data-status="sale">
+                    <div class="product-badge sale">SALE -15%</div>
+                    <div class="product-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 200'%3E%3Crect fill='%23222224' width='300' height='200'/%3E%3Ctext x='50%25' y='50%25' text-anchor='middle' dy='.3em' fill='%234CAF50' font-size='48'%3E⚡%3C/text%3E%3C/svg%3E" alt="Энергетик" loading="lazy">
+                    </div>
+                    <div class="product-category"><span>⚡</span> Предтреники</div>
+                    <h3 class="product-title">Nitro Pump Pre-Workout</h3>
+                    <p class="product-description">Предтренировочный комплекс с пампинг-эффектом</p>
+                    <div class="product-price">
+                        <div><span class="price">2,550₽</span><span class="old-price">3,000₽</span></div>
+                        <button class="add-to-cart" data-product="Nitro Pump Pre-Workout" data-price="2550" data-category="pharma">
+                            <span>🛒</span> В корзину
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <div class="section-header">
+                <h2>Преимущества нашего спортпита</h2>
+                <p>Профессиональное питание для серьёзных результатов</p>
+            </div>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">✅</div>
+                    <h3>Сертификация</h3>
+                    <p>Все добавки сертифицированы и проверены на безопасность</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🔬</div>
+                    <h3>Лабораторный контроль</h3>
+                    <p>Каждая партия проходит проверку качества</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🏆</div>
+                    <h3>Выбор профессионалов</h3>
+                    <p>Рекомендовано профессиональными спортсменами</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h4>Категории</h4>
+                <ul>
+                    <li><a href="#">Протеины</a></li>
+                    <li><a href="#">Аминокислоты</a></li>
+                    <li><a href="#">Предтреники</a></li>
+                    <li><a href="#">Витамины</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Помощь</h4>
+                <ul>
+                    <li><a href="#">Как принимать</a></li>
+                    <li><a href="#">Сертификаты</a></li>
+                    <li><a href="#">Доставка</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Контакты</h4>
+                <ul>
+                    <li>📍 г. Пенза, ул. Дзержинского, 30</li>
+                    <li>📞 <a href="tel:+79374200307">+7 (937) 420-03-07</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Бойцовский клуб NOSOROG. Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
